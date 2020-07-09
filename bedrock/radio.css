@@ -1,0 +1,36 @@
+input[type=radio].bedrock {
+	display: none;
+}
+
+input[type=radio].bedrock + .radio {
+	position: relative;
+	display: inline-block;
+	border: 2px solid #000000;
+	width: 16px;
+	height: 16px;
+	background: #585658;
+}
+
+input[type=radio].bedrock:disabled + .radio, input[type=radio].bedrock:disabled + .radio + label {
+	opacity: .5;
+}
+
+input[type=radio].bedrock:not(:disabled) + .radio:hover {
+	border-color: #FFFFFF;
+}
+
+input[type=radio].bedrock:checked:not(:disabled) + .radio:not(:hover) {
+	width: 8px;
+	height: 8px;
+	border: 6px solid #FFFFFF;
+}
+
+input[type=radio].bedrock:checked:not(:disabled) + .radio:hover::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	background: #FFFFFF;
+}

@@ -1,0 +1,24 @@
+input.bedrock, .bedrock-input {
+	font-family: 'Minecraft';
+	background: #5E5E5E;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: 0;
+	border-top: 2px solid #464446;
+	border-bottom: 2px solid #B2B2B2;
+	outline: 2px solid #000000;
+	padding: 8px;
+	caret-color: #00FF00;
+}
+
+input.bedrock::placeholder, .bedrock-input::placeholder {
+	color: #7F7F7F;
+}
+
+input.bedrock:disabled, .bedrock-input:disabled {
+	color: #ACACAC;
+}
+
+input.bedrock:hover:not(:disabled), .bedrock-input:hover:not(:disabled) {
+	outline-color: #FFFFFF;
+}

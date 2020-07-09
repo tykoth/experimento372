@@ -1,127 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Minecraft Inventory</title>
-  </head>
+<html>
 
-  <body>
-    <div class="content">
-      <div class="inventory">
-        <h1>Inventory</h1>
-        <div class="slotSpace">
-          <div id="0" class="slot"></div>
-          <div id="1" class="slot"></div>
-          <div id="2" class="slot"></div>
-          <div id="3" class="slot"></div>
-          <div id="4" class="slot"></div>
-          <div id="5" class="slot"></div>
-          <div id="6" class="slot"></div>
-          <div id="7" class="slot">
-            <div class="item" id="wood">
-              <img src="itens/wood.png" />
-              <div class="number">
-                33
-              </div>
-            </div>
-          </div>
-          <div id="8" class="slot"></div>
-          <div id="9" class="slot"></div>
-          <div id="10" class="slot"></div>
-          <div id="11" class="slot"></div>
-          <div id="12" class="slot"></div>
-          <div id="13" class="slot"></div>
-          <div id="14" class="slot">
-            <div class="item" id="cobblestone">
-              <img src="itens/cobblestone.png" />
-              <div class="number">
-                3
-              </div>
-            </div>
-          </div>
-          <div id="15" class="slot"></div>
-          <div id="16" class="slot"></div>
-          <div id="17" class="slot"></div>
-          <div id="18" class="slot"></div>
-          <div id="19" class="slot"></div>
-          <div id="20" class="slot">
-            <div class="item" id="cobblestone">
-              <img src="itens/cobblestone.png" />
-              <div class="number">
-                14
-              </div>
-            </div>
-          </div>
-          <div id="21" class="slot"></div>
-          <div id="22" class="slot"></div>
-          <div id="23" class="slot"></div>
-          <div id="24" class="slot"></div>
-          <div id="25" class="slot"></div>
-          <div id="26" class="slot"></div>
-        </div>
-        <div class="slotSpace">
-          <div id="35" class="slot">
-            <div class="item" id="diamond_sword">
-              <img src="itens/diamond-sword.png" />
-              <div class="number">1</div>
-            </div>
-          </div>
-          <div id="27" class="slot">
-            <div class="item" id="steak">
-              <img src="itens/steak.png" />
-              <div class="number">12</div>
-            </div>
-          </div>
-          <div id="28" class="slot">
-            <div class="item" id="diamond">
-              <img src="itens/diamond.png" />
-              <div class="number">
-                33
-              </div>
-            </div>
-          </div>
-          <div id="29" class="slot">
-            <div class="item" id="golden_apple">
-              <img src="itens/apple.gif" />
-              <div class="number">
-                8
-              </div>
-            </div>
-          </div>
-          <div id="30" class="slot">
-            <div class="item" id="iron_ingot">
-              <img src="itens/iron.png" />
-              <div class="number">
-                12
-              </div>
-            </div>
-          </div>
-          <div id="31" class="slot">
-            <div class="item" id="pic_diamond">
-              <img src="itens/diamond-pickaxe.png" />
-              <div class="number">1</div>
-            </div>
-          </div>
-          <div id="32" class="slot">
-            <div class="item" id="cobblestone">
-              <img src="itens/cobblestone.png" />
-              <div class="number">
-                32
-              </div>
-            </div>
-          </div>
-          <div id="33" class="slot"></div>
-          <div id="34" class="slot"></div>
-        </div>
-      </div>
-      <div class="copy">
-        <a href="https://github.com/lavininhamelo" class="link"
-          >by Lavínia Melo</a
-        >
-      </div>
-    </div>
-    <script src="script.js" defer></script>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>experimento372</title>
+	<link rel="stylesheet" type="text/css" href="bedrock/button.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/card.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/checkbox.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/dropdown.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/input.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/radio.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/range.css" />
+	<link rel="stylesheet" type="text/css" href="bedrock/select.css" />
+	<link rel="stylesheet" type="text/css" href="common/font.css" />
+	<link rel="stylesheet" type="text/css" href="common/format.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<style>
+		body {
+			background: url(https://i.imgur.com/sfgRkHH.png);
+			font-family: Minecraft, Monospace;
+			color: white;
+		}
+
+		.row+.row {
+			margin-top: 30px;
+		}
+
+		code {
+			display: block;
+			margin-bottom: 8px;
+		}
+	</style>
+</head>
+
+<body class="bedrock">
+	<h1>experimento372</h1>
+	<h3>Junção de dois repositórios relacionados ao mesmo assunto, no caso Minecraft</h3>
+	<p>Confira os estilos e o inventário, que podem ser convertidos em componente React</p>
+	<hr>
+	<div class="row">
+		<h5>Inventory</h5>
+
+		<div class="inventory">
+			<h1>Inventory</h1>
+			<div class="slotSpace">
+				<div id="0" class="slot"></div>
+				<div id="1" class="slot"></div>
+				<div id="2" class="slot"></div>
+				<div id="3" class="slot"></div>
+				<div id="4" class="slot"></div>
+				<div id="5" class="slot"></div>
+				<div id="6" class="slot"></div>
+				<div id="7" class="slot">
+					<div class="item" id="wood">
+						<img src="itens/wood.png" />
+						<div class="number">
+							33
+						</div>
+					</div>
+				</div>
+				<div id="8" class="slot"></div>
+				<div id="9" class="slot"></div>
+				<div id="10" class="slot"></div>
+				<div id="11" class="slot"></div>
+				<div id="12" class="slot"></div>
+				<div id="13" class="slot"></div>
+				<div id="14" class="slot">
+					<div class="item" id="cobblestone">
+						<img src="itens/cobblestone.png" />
+						<div class="number">
+							3
+						</div>
+					</div>
+				</div>
+				<div id="15" class="slot"></div>
+				<div id="16" class="slot"></div>
+				<div id="17" class="slot"></div>
+				<div id="18" class="slot"></div>
+				<div id="19" class="slot"></div>
+				<div id="20" class="slot">
+					<div class="item" id="cobblestone">
+						<img src="itens/cobblestone.png" />
+						<div class="number">
+							14
+						</div>
+					</div>
+				</div>
+				<div id="21" class="slot"></div>
+				<div id="22" class="slot"></div>
+				<div id="23" class="slot"></div>
+				<div id="24" class="slot"></div>
+				<div id="25" class="slot"></div>
+				<div id="26" class="slot"></div>
+			</div>
+			<div class="slotSpace">
+				<div id="35" class="slot">
+					<div class="item" id="diamond_sword">
+						<img src="itens/diamond-sword.png" />
+						<div class="number">1</div>
+					</div>
+				</div>
+				<div id="27" class="slot">
+					<div class="item" id="steak">
+						<img src="itens/steak.png" />
+						<div class="number">12</div>
+					</div>
+				</div>
+				<div id="28" class="slot">
+					<div class="item" id="diamond">
+						<img src="itens/diamond.png" />
+						<div class="number">
+							33
+						</div>
+					</div>
+				</div>
+				<div id="29" class="slot">
+					<div class="item" id="golden_apple">
+						<img src="itens/apple.gif" />
+						<div class="number">
+							8
+						</div>
+					</div>
+				</div>
+				<div id="30" class="slot">
+					<div class="item" id="iron_ingot">
+						<img src="itens/iron.png" />
+						<div class="number">
+							12
+						</div>
+					</div>
+				</div>
+				<div id="31" class="slot">
+					<div class="item" id="pic_diamond">
+						<img src="itens/diamond-pickaxe.png" />
+						<div class="number">1</div>
+					</div>
+				</div>
+				<div id="32" class="slot">
+					<div class="item" id="cobblestone">
+						<img src="itens/cobblestone.png" />
+						<div class="number">
+							32
+						</div>
+					</div>
+				</div>
+				<div id="33" class="slot"></div>
+				<div id="34" class="slot"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<h5>Buttons</h5>
+		<div class="row">
+			<code>&lt;button&gt;Button&lt;/button&gt;</code>
+			<button class="bedrock">Button</button>
+		</div>
+		<div class="row">
+			<code>&lt;button disabled&gt;Button&lt;/button&gt;</code>
+			<button class="bedrock" disabled>Button</button>
+		</div>
+		<div class="row">
+			<code>&lt;button class="selected"&gt;Button&lt;/button&gt;</code>
+			<button class="bedrock selected">Button</button>
+		</div>
+		<div class="row">
+			<code>&lt;button class="dark"&gt;Button&lt;/button&gt;</code>
+			<button class="bedrock dark">Button</button>
+		</div>
+	</div>
+	<div class="row">
+		<h5>Inputs</h5>
+		<div class="row">
+			<code>&lt;input type="text" /&gt;</code>
+			<input class="bedrock" type="text" />
+		</div>
+		<div class="row">
+			<code>&lt;input type="text" placeholder="With a placeholder" /&gt;</code>
+			<input class="bedrock" type="text" placeholder="With a placeholder" />
+		</div>
+		<div class="row">
+			<code>&lt;input type="text" value="Disabled" disabled /&gt;</code>
+			<input class="bedrock" type="text" value="Disabled" disabled />
+		</div>
+		<div class="row">
+			<code>&lt;input type="password" /&gt;</code>
+			<input class="bedrock" type="password" />
+		</div>
+		<div class="row">
+			<code>&lt;input type="checkbox" /&gt;</code>
+			<input class="bedrock" type="checkbox" />
+		</div>
+		<div class="row">
+			<code>&lt;input type="checkbox" checked /&gt;</code>
+			<input class="bedrock" type="checkbox" checked />
+		</div>
+		<div class="row">
+			<code>&lt;input type="checkbox" disabled /&gt;</code>
+			<input class="bedrock" type="checkbox" disabled />
+		</div>
+		<div class="row">
+			<code>&lt;input type="radio" /&gt;</code>
+			<form>
+				<input class="bedrock" type="radio" name="radio" checked />
+				<input class="bedrock" type="radio" name="radio" />
+				<input class="bedrock" type="radio" name="radio" />
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<h5>Cards</h5>
+		<div class="card">
+			Title of the card
+			<div class="content">
+				<p class="light-purple">Content of the card</p>
+				<p class="red">Content of the card but red</p>
+				<p class="blue shadow">Blue with shadow</p>
+			</div>
+		</div>
+		<div class="card" style="margin-top:72px">
+			<ul class="tabs">
+				<li class="selected">First Tab</li>
+				<li>Second Tab</li>
+				<li>Third Tab</li>
+			</ul>
+			Title of the card
+			<div class="content">
+				Content of the card
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h5>Dropdown</h5>
+		<div class="row dropdown">
+			<div class="bedrock-btn dropdown-toggle" style="width:100%" data-toggle="dropdown1">Dropdown</div>
+			<div id="dropdown1" class="dropdown-menu">
+				<p>Some data</p>
+				<p>Some more data</p>
+			</div>
+		</div>
+		<div class="row dropdown">
+			<div class="bedrock-btn dropdown-toggle" data-toggle="dropdown2">Choose an option</div>
+			<div id="dropdown2" class="dropdown-menu">
+				<form>
+					<div>
+						<input class="bedrock" id="option-a" type="radio" name="radio" checked />
+						<label for="option-a">Option A</label>
+					</div>
+					<div>
+						<input class="bedrock" id="option-b" type="radio" name="radio" />
+						<label for="option-b">Option B</label>
+					</div>
+					<div>
+						<input class="bedrock" id="option-c" type="radio" name="radio" />
+						<label for="option-c">Option C</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h5>Select</h5>
+		<select class="bedrock">
+			<option value="1">Option A</option>
+			<option value="2" disabled>Option B</option>
+			<option value="3">Option C</option>
+		</select>
+	</div>
+	<div class="row">
+		<h5>Range</h5>
+		<input type="range" class="bedrock" min="0" max="10" />
+	</div>
+
+	<script src="bedrock/script.js"></script>
+	<script src="script.js" defer></script>
+</body>
+
 </html>
